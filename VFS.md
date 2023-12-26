@@ -20,7 +20,7 @@ static int __init my_init(void) {
         printk(KERN_ERR "Failed to open file!\n");
         return PTR_ERR(filep);
     }
-    // File opened successfully, perform operations...
+    // File opened successfully, perform operations
 
     // Close the file
     filp_close(filep, NULL);
