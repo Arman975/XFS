@@ -1,3 +1,16 @@
+FIO job:
+[myjob]
+ioengine=sync
+rw=randwrite
+bs=4k
+numjobs=4
+size=1G
+fsync=1
+direct=1
+runtime=30s
+
+
+OUTPUT:
 [pratikj@localhost NewBcc]$ sudo ./27script.sh
 [sudo] password for pratikj: 
 Tracing "xfs_file_fsync"... Ctrl-C to end.
